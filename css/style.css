@@ -90,6 +90,7 @@ header {
 
 .hero {
   height: 50vh;
+  width: 100;
   margin-top: 50px;
   padding-left: 30px;
   display: flex;
@@ -112,6 +113,7 @@ header {
 
 .profile {
   height: auto;
+  width: 100;
   padding: 30px 50px 30px 50px;
   background: linear-gradient(to bottom, #d5deef, #b1c9ef);
 }
@@ -155,6 +157,7 @@ header {
 
 .portofolio {
   height: auto;
+  width: 100;
   background: linear-gradient(to bottom, #b1c9ef, #8aaee0);
   padding: 30px;
 }
@@ -253,6 +256,7 @@ header {
 
 .message {
   height: auto;
+  width: 100;
   background-color: #8aaee0;
   padding: 30px 30px 50px 30px;
 }
@@ -346,6 +350,7 @@ textarea {
 
 /* footer */
 .footer {
+  width: 100;
   background-color: #628ecb;
   font-family: poppins;
   color: white;
@@ -426,6 +431,6 @@ textarea {
   }
 
   .profile p {
-    width: 450px;
+    width: 350px;
   }
 }
