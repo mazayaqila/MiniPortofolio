@@ -379,6 +379,7 @@ textarea {
 @media (max-width: 768px) {
   body {
     font-size: 14px;
+    width: 100%;
   }
 
   nav {
@@ -432,5 +433,6 @@ textarea {
 
   .profile p {
     width: 350px;
+    flex-wrap: wrap;
   }
 }
