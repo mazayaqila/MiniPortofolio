@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Feather Icons -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="main-logo"></div>
+      <nav>
+        <div class="navbar">
+          <a href="#">Home</a>
+          <a href="#my-profile">My Profile</a>
+          <a href="#portofolio">Portofolio</a>
+          <a href="#message-us">Message</a>
+        </div>
+
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sections -->
+    <main>
+      <!-- Hero section -->
+      <section class="hero" id="">
+        <h1>Hi, <span>User</span>! Welcome to Portofolio Ayaa</h1>
+      </section>
+
+      <!-- Our Profile -->
+      <section class="profile" id="my-profile">
+        <h1>My Profile</h1>
+        <div class="profile-container">
+          <div class="profile-image"></div>
+          <div class="profile-text">
+            <p>
+              Hai, saya Mazaya Aqila. Saya adalah seorang siswa di SMAN 1 Temanggung
+              yang sedang menempuh pendidikan di kelas 12 IPA. Saya memiliki minat
+              yang besar dalam bidang teknologi dan pemrograman. Saya berharap kedepannya
+              dapat mengembangkan keterampilan saya dalam bidang ini dan berkontribusi dalam
+              proyek-proyek yang menarik.
+            </p>
+            <p>
+              Saya sangat antusias untuk terus belajar dan berkembang dalam dunia teknologi.
+              Saya percaya bahwa dengan kerja keras dan dedikasi, saya dapat mencapai tujuan
+              saya dan memberikan dampak positif di masyarakat melalui teknologi.
+            </p>
+          </div>
+      </section>
+
+      <!-- Portofolio -->
+      <section class="portofolio" id="portofolio">
+        <h1>Portofolio</h1>
+        <div class="porto-container">
+          <div class="porto-item">
+            <img class="porto-image"
+              src="./zerodo.png"
+              alt="zerodo">
+            <h2>Zerodo - Website Anak</h2>
+            <p>
+              Website berbasis edukasi yang interaktif untuk anak-anak. Proyek ini mencakup HTML, CSS, dan JavaScript.
+              Proyek ini belum sepenuhnya tertata karena merupakan tugas sekolah dan proyek pertama saya.
+            </p>
+            <a href="https://zerodo.netlify.app/" target="_blank">Lihat Website</a>
+          </div>
+          <div class="porto-item">
+            <img class="porto-image" src="./studyplanner.png" alt="studywebsite">
+            <h2>StudyPlanner - <em>InProgress</em></h2>
+            <p>
+              Website ini sedang dalam tahap pengembangan yang nantinya akan berisi jadwal belajar, timer, 
+              dan fitur-fitur lainnya untuk membantu siswa dalam mengatur waktu belajar mereka.
+            </p>
+            <a href="https://mazayaqila.github.io/StudyPlanner/" target="_blank">Lihat Website</a>
+          </div>
+          <div class="porto-item">
+            <img class="porto-image" src="./calculator.png" alt="calculator">
+            <h2>Calculator Website</h2>
+            <p>
+              Ini adalah website kalkulator sederhana yang dibuat menggunakan HTML, CSS, dan JavaScript.
+            </p>
+            <a href="https://mazayaqila.github.io/Calculator/">Lihat Website</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message Us -->
+      <section class="message" id="message-us">
+        <h1>Message Me</h1>
+        <br />
+        <div class="container">
+          <!-- Form Input -->
+          <form id="messageForm">
+            <div>
+              <label>Nama :</label>
+              <br />
+              <input
+                class="label"
+                type="text"
+                id="nama"
+                placeholder="Nama"
+                required
+              />
+            </div>
+            <div>
+              <label>Tanggal Lahir :</label>
+              <br />
+              <input class="label" type="date" id="tglLahir" required />
+            </div>
+            <div>
+              <label>Jenis Kelamin :</label>
+              <br />
+              <input type="radio" name="gender" value="Laki - Laki" required />
+              Laki-Laki
+              <input type="radio" name="gender" value="Perempuan" /> Perempuan
+            </div>
+            <div>
+              <label>Pesan :</label>
+              <br />
+              <textarea class="label" id="pesan" placeholder="Pesan"></textarea>
+            </div>
+            <div>
+              <button class="sub-button" type="submit">Submit</button>
+            </div>
+          </form>
+          <!-- Output -->
+          <div class="output">
+            <h2>Output:</h2>
+            <hr>
+            <div id="outputBox">
+              <p><strong>Current time :</strong> <span id="currentTime"></span></p>
+              <p><strong>Nama :</strong> <span id="outputNama"></span></p>
+              <p><strong>Tanggal Lahir :</strong> <span id="outputTglLahir"></span></p>
+              <p><strong>Jenis Kelamin :</strong> <span id="outputGender"></span></p>
+              <p><strong>Pesan :</strong> <span id="outputPesan"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Created by: Mazaya</p>
+    </footer>
+
+    <!-- Feather -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace(); 
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
