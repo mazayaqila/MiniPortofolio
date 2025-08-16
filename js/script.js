@@ -1,8 +1,6 @@
 window.onload = function () {
   let name = prompt("Masukkan nama kamu:");
-  if (!name || name.trim() === "") {
-    name = "User"; // fallback kalau kosong
-  }
+  if (!name || name.trim() === "") name = "User";
   document.getElementById("userName").innerText = name;
 };
 
