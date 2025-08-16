@@ -1,8 +1,10 @@
-let name = prompt("Masukkan nama kamu:");
-if (!name || name.trim() === "") {
-  name = "User"; // fallback kalau kosong
-}
-document.getElementById("userName").innerText = name;
+window.onload = function () {
+  let name = prompt("Masukkan nama kamu:");
+  if (!name || name.trim() === "") {
+    name = "User"; // fallback kalau kosong
+  }
+  document.getElementById("userName").innerText = name;
+};
 
 document.getElementById("messageForm").addEventListener("submit", function (e) {
   e.preventDefault();
